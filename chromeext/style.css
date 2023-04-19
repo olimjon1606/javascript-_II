@@ -1,11 +1,9 @@
 body {
     margin: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-family: Consolas, sans-serif;
     min-width: 400px;
-    border: 1.5px solid#5f9341;
-    box-shadow: 5px 10px #5f9341;
-    border-radius: 20px;
+
 }
 
 input {
@@ -13,7 +11,9 @@ input {
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #5f9341;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    box-shadow: 5px 10px 15px #5f93413a;
+
 }
 
 button {
@@ -22,11 +22,29 @@ button {
     padding: 10px 20px;
     border: 1px solid #5f9341;
     font-weight: bold;
+    box-shadow: 3px 10px 10px #a1df7dd5;
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: #6eac4a;
 }
 
 #delete-btn {
-    background: white;
-    color: #5f9341;
+    background: red;
+    color: #fff;
+    border-color: red;
+}
+
+#delete-btn:hover {
+    background: rgb(240, 51, 51);
+    color: #ffffff;
+}
+
+button:active {
+    background-color: #6eac4a;
+    box-shadow: 3px 10px 10px #5f9341;
+    transform: translateY(3px);
 }
 
 ul {
@@ -42,4 +60,3 @@ li {
 a {
     color: #5f9341;
 }
-
