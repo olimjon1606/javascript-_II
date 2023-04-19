@@ -39,11 +39,15 @@ inputBtn.addEventListener("click", function () {
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)
 })
-const tabs = [
-    { url: "https://olimjonorifjonov.com/" }
-]
+
 tabBtn.addEventListener("click", function () {
-    console.log(tabs)
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        render(myLeads)
+    })
+
+
 })
 
 
